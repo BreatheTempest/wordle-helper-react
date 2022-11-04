@@ -15,7 +15,7 @@ export default function Key(props: { value: string; buttonClick: (value: MouseEv
             props.buttonClick(e)
           }}
           name={props.value}
-          className={`flex items-center justify-center bg-gray-500 text-gray-100 h-14 px-3 py-4 uppercase rounded text-xs font-bold ${props.value === 'enter' || props.value === 'delete'
+          className={`flex items-center justify-center bg-gray-500 text-gray-100 h-14 px-3 py-4 uppercase rounded text-sm font-bold ${props.value === 'enter' || props.value === 'delete'
             ? 'col-span-3'
             : 'col-span-2'
             }`}
